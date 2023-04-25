@@ -6,7 +6,7 @@ body{
   height: 100vh;
 }
 h1{
-  color: red;
+  position: relative;
 }
 h1::after{
   content: "";
@@ -19,7 +19,7 @@ h1::after{
   background-color: white;
   transform:rotate(-20deg);
   animation-name: move;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 @keyframes move {
@@ -27,6 +27,6 @@ h1::after{
     left: -10%;
   }
   50%,99%{
-    left: 100%;
+    left: 110%;
   }
 }
